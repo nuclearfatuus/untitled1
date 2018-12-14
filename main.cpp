@@ -1,24 +1,25 @@
 #include <iostream>
+
+class point() {
+    int x;
+    int y;
+    int getX() const {
+        return x;
+    }
+
+    int getY() const {
+        return y;
+    }
+
+    point (int _x, int _y) {
+        x = _x;
+        y = _y;
+        std::cout<< x << '|'<< y <<std::endl;
+    }
+
+    }
+
 int main() {
-    float c = 0.4;
-    std::cout << "c = " << c << '\n';
-    std::cout << " адрес c = " << &c << '\n';
-    int a = 7;
-    int *b = &a;
-    std::cout << "указатель b = " << b << '\n';
-    std::cout << "a = " << a << '\n';
-    std::cout << "адрес a = " << &a << '\n';
-    float b = 0.4;
-    std::cout << "b = " << b << '\n';
-    std::cout << "адрес b = " << &b << '\n';
-    std::cout << "*b = " << *b << '\n';
-    *b+=5;
-    std::cout << "*b = " << *b << '\n';
-    std::cout << "a = " << a << '\n';
-    b = (int *) &c;
-    std::cout << "указатель b = " << b << '\n';
-    *b =7;
-    std::cout << "c = " << c << '\n';
-    a = *((int *)&c);
-    std::cout<<a<<'\n';
+    point(3, 4);
     return 0;
+}
